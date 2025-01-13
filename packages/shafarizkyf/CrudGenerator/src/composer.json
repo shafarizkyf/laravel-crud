@@ -1,0 +1,27 @@
+{
+    "name": "shafarizkyf/crud-generator",
+    "description": "A Simple Laravel package to generate CRUD files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shafarizkyf"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "shafarizkyf\\CrudGenerator\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "shafarizkyf\\CrudGenerator\\CrudGeneratorServiceProvider"
+            ]
+        }
+    }
+}

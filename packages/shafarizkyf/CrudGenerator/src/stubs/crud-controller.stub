@@ -1,0 +1,50 @@
+<?php
+
+namespace {{namespace}};
+
+{{useController}}
+use App\Models\{{modelName}};
+use Illuminate\Http\Request;
+
+class {{modelName}}Controller extends Controller
+{
+    public function index()
+    {
+        return {{modelName}}::all();
+    }
+
+    public function create()
+    {
+        //
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        return {{modelName}}::create($data);
+    }
+
+    public function show($id)
+    {
+        return {{modelName}}::findOrFail($id);
+    }
+
+    public function edit($id)
+    {
+        //
+    }
+
+    public function update(Request $request, $id)
+    {
+        $model = {{modelName}}::findOrFail($id);
+        $model->update($request->all());
+        return $model;
+    }
+
+    public function destroy($id)
+    {
+        $model = {{modelName}}::findOrFail($id);
+        $model->delete();
+        return response(null, 204);
+    }
+}
