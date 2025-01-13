@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendorName\CrudGenerator;
+namespace Shafarizkyf\CrudGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ class CrudGeneratorServiceProvider extends ServiceProvider
     {
         // Load the command
         $this->commands([
-            \shafarizkyf\CrudGenerator\Commands\MakeCrud::class,
+            \Shafarizkyf\CrudGenerator\Commands\MakeCrud::class,
         ]);
     }
 
