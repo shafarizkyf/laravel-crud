@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Shafarizkyf\CrudGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
