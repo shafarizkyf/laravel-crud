@@ -14,13 +14,13 @@
     },
     "autoload": {
         "psr-4": {
-            "shafarizkyf\\CrudGenerator\\": "."
+            "shafarizkyf\\CrudGenerator\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "shafarizkyf\\CrudGenerator\\CrudGeneratorServiceProvider"
+                "Shafarizkyf\\CrudGenerator\\CrudGeneratorServiceProvider"
             ]
         }
     }
