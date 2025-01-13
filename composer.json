@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "shafarizkyf\\CrudGenerator\\": "src/"
+            "Shafarizkyf\\CrudGenerator\\": "src/"
         }
     },
     "extra": {
